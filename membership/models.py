@@ -1,5 +1,6 @@
+import uuid as uuid
 from django.db import models
-
+from django.contrib.auth.models import User
 
 MEMBERSHIP_TYPE_CHOICES = (
     ("Adult", "Adult"),
@@ -14,7 +15,6 @@ PAYMENT_TYPE_CHOICES = (
 )
 
 
-# Create your models here.
 class MembershipType(models.Model):
     name = models.CharField(
         max_length=7,
@@ -37,6 +37,7 @@ class MembershipType(models.Model):
 
 
 class Membership(models.Model):
+    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     type = models.ForeignKey(to=MembershipType, on_delete=models.PROTECT)
     amount_paid = models.DecimalField(max_digits=5, decimal_places=2)
     payment_type = models.CharField(max_length=6, choices=PAYMENT_TYPE_CHOICES)
@@ -44,4 +45,12 @@ class Membership(models.Model):
 
 
 class Member(models.Model):
-    pass
+    membership = models.ForeignKey(to=Membership, on_delete=models.PROTECT)
+    last_name = models.CharField(max_length=24, null=False, blank=False)
+    first_name = models.CharField(max_length=24, null=False, blank=False)
+    address = models.CharField(max_length=120, null=True, blank=True)
+    city = models.CharField(max_length=24, null=True, blank=True)
+    state = models.CharField(max_length=24, null=True, blank=True)
+    postal_code = models.CharField(max_length=14, null=True, blank=True)
+
+
