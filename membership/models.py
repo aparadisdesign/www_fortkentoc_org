@@ -7,6 +7,12 @@ MEMBERSHIP_TYPE_CHOICES = (
     ("Student", "Student"),
 )
 
+PAYMENT_TYPE_CHOICES = (
+    ("Cash", "Cash"),
+    ("Check", "Check"),
+    ("Paypal", "Paypal")
+)
+
 
 # Create your models here.
 class MembershipType(models.Model):
@@ -31,7 +37,10 @@ class MembershipType(models.Model):
 
 
 class Membership(models.Model):
-    pass
+    type = models.ForeignKey(to=MembershipType, on_delete=models.PROTECT)
+    amount_paid = models.DecimalField(max_digits=5, decimal_places=2)
+    payment_type = models.CharField(max_length=6, choices=PAYMENT_TYPE_CHOICES)
+    payment_date = models.DateField()
 
 
 class Member(models.Model):
