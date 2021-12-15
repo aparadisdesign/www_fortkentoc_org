@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import MembershipType, Membership, Member
+from .models import MembershipType, Membership, Member, User
+
+
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    list_display = ['email', 'last_login', 'is_active', 'is_staff']
 
 
 @admin.register(MembershipType)
