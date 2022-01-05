@@ -58,7 +58,9 @@ class BoardMember(models.Model):
     first_name = models.CharField(max_length=65, null=False, blank=False)
     last_name = models.CharField(max_length=65, null=False, blank=False)
     office_held = models.CharField(max_length=99, null=True, blank=True)
-    image = models.ImageField(upload_to='uploads/board_members/% Y/% m/% d/', null=True, blank=True)
+    image = models.ImageField(
+        upload_to="uploads/board_members/% Y/% m/% d/", null=True, blank=True
+    )
 
     def __str__(self):
         if self.office_held:
@@ -66,7 +68,9 @@ class BoardMember(models.Model):
         return f"{self.last_name}, {self.first_name}"
 
     class Meta:
-        ordering = ['last_name', 'first_name']
+        ordering = ["last_name", "first_name"]
+        verbose_name = "Board Member"
+        verbose_name_plural = "Board Members"
 
 
 class Sponsor(models.Model):
@@ -74,9 +78,31 @@ class Sponsor(models.Model):
     level = models.CharField(max_length=15, null=True, blank=True)
     start_date = models.DateField(null=True, blank=True)
     end_date = models.DateField(null=True, blank=True)
-    image = models.ImageField(upload_to='uploads/sponsors/% Y/% m/% d/', null=True, blank=True)
+    image = models.ImageField(
+        upload_to="uploads/sponsors/% Y/% m/% d/", null=True, blank=True
+    )
 
     def __str__(self):
         return f"{self.name}"
 
+    class Meta:
+        ordering = ["start_date", "name"]
+        verbose_name = ("Sponsor",)
+        verbose_name_plural = "Sponsors"
 
+
+class Coach(models.Model):
+    last_name = models.CharField(max_length=45, null=False, blank=False)
+    first_name = models.CharField(max_length=45, null=False, blank=False)
+    title = models.CharField(max_length=255, null=False, blank=False)
+    biography = models.TextField(null=False, blank=False)
+    email = models.EmailField(null=False, blank=False)
+    phone = models.CharField(max_length=20, null=False, blank=False)
+
+    def __str__(self):
+        return f"{self.last_name}, {self.first_name}"
+
+    class Meta:
+        ordering = ["last_name", "first_name"]
+        verbose_name = "Coach"
+        verbose_name_plural = "Coaches"
