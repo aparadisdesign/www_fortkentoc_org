@@ -1,5 +1,8 @@
 from django.contrib import admin
+from django import forms
+from django.db import models
 import website.models as website_models
+
 
 admin.site.site_header = "FKOC Administration"
 admin.site.site_title = "FKOC Administration"
@@ -26,3 +29,7 @@ class CoachAdmin(admin.ModelAdmin):
     list_display = ["last_name", "first_name", "email", "phone"]
     list_filter = ["last_name", "first_name", "email", "phone"]
     ordering = ["last_name", "first_name"]
+    formfield_overrides = { models.TextField: {'widget': forms.Textarea(attrs={'class':'ckeditor'})}, }
+
+    class Media:
+        js = ('https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js',)

@@ -19,6 +19,7 @@ ALLOWED_HOSTS = config(
 # Application definition
 
 INSTALLED_APPS = [
+    "django_non_dark_admin",
     "django.contrib.admin",
     "django.contrib.auth",
     "membership.apps.MembershipConfig",
@@ -118,3 +119,6 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "website.User"
+
+
+DISABLE_DARK_MODE = True
