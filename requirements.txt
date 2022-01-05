@@ -2,3 +2,4 @@ Django
 python-decouple
 pymysql
 pre-commit
+Pillow
