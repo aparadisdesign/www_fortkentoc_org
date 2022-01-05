@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#F0F3F7A6;
+}
+.upper-menu-container{
+    width: 100%;
+    min-height: 31px;
+    background: #505050 0 0 no-repeat;
+    opacity: 1;
+    height: 31px;
+    text-align: center;
+    font: normal normal bold 14px/19px Roboto Condensed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upper-menu-container > ul.upper-menu {
+    width: 100%;
+    max-width:1200px;
+    list-style-type: none;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.upper-menu-container > ul.upper-menu > li {
+    color: inherit;
+    padding: 0 5px;
+}
+.upper-menu-container > ul.upper-menu > li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-menu-container{
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 131px;
+    box-shadow: 0 3PX 6PX #36363629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-menu-container > ul.main-menu{
+    width:100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.main-menu-container > ul.main-menu > li{
+    color: #3F2B2E;
+    padding: 0 5px;
+    text-align: center;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    opacity: 1;
+    list-style-type: none;
+}
+
+.main-menu-container > ul.main-menu > li > a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.main-menu-container > ul.main-menu > li > a.donate{
+    color: white;
+    text-decoration: none;
+    background: #1D52A1 0 0 no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    padding:5px 10px;
+}
+
+footer.footer{
+    min-height: 103px;
+    width: 100%;
+    color: white;
+    background: #1D52A1 0 0 no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer.footer > div.footer-container{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer.footer > div.footer-container > .copyright{
+    text-align: right;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    font: normal normal bold 18px/25px Source Sans Pro;
+}
+
+footer.footer > div.footer-container > div.footer-menu-container > ul.footer-menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+footer.footer > div.footer-container > div.footer-menu-container > ul.footer-menu > li > a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
