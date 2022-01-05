@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import MembershipType, Membership, Member, User
+from .models import MembershipType, Membership, Member
+from website.models import User
 
 
 @admin.register(User)
@@ -13,6 +14,13 @@ class MembershipTypeAdmin(admin.ModelAdmin):
     list_display_links = None
     list_filter = ['name', 'year']
     ordering = ['-year', 'name']
+
+
+@admin.register(Member)
+class MemberAdmin(admin.ModelAdmin):
+    list_display = ['last_name', 'first_name', 'address', 'city', 'state', 'postal_code', 'user']
+    list_filter = ['last_name', 'first_name', 'address', 'city', 'state', 'postal_code']
+    ordering = ['last_name', 'first_name']
 
 
 class MemberTabularInline(admin.TabularInline):

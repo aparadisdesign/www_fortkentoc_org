@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "membership.apps.MembershipConfig",
+    "website.apps.WebsiteConfig",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
@@ -115,4 +116,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-AUTH_USER_MODEL = "membership.User"
+AUTH_USER_MODEL = "website.User"
