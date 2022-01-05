@@ -5,6 +5,7 @@ from django.db import models
 class Event(models.Model):
     name = models.CharField(max_length=65, null=False, blank=False)
     slug = models.SlugField()
+    event_banner_image = models.ImageField(upload_to="uploads/events/banners/% Y/% m/% d/", null=True, blank=True)
     description = models.TextField()
     event_pdf = models.FileField(upload_to="uploads/events/pdfs/% Y/% m/% d/", null=True, blank=True)
 
