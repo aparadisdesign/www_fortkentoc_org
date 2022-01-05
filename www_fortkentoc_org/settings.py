@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
     "membership.apps.MembershipConfig",
+    "events.apps.EventsConfig",
     "website.apps.WebsiteConfig",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
