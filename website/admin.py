@@ -2,11 +2,13 @@ from django.contrib import admin
 from django import forms
 from django.db import models
 import website.models as website_models
+from django.contrib.auth.models import Group
 
 
 admin.site.site_header = "FKOC Administration"
 admin.site.site_title = "FKOC Administration"
 admin.site.index_title = "FKOC Administration"
+admin.site.unregister(Group)
 
 
 @admin.register(website_models.BoardMember)
@@ -33,3 +35,15 @@ class CoachAdmin(admin.ModelAdmin):
 
     class Media:
         js = ('https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js',)
+
+
+@admin.register(website_models.Activity)
+class ActivityAdmin(admin.ModelAdmin):
+    list_display = ["name", "season"]
+    list_filter = ["name", "season"]
+    ordering = ["name", "season"]
+    formfield_overrides = { models.TextField: {'widget': forms.Textarea(attrs={'class':'ckeditor'})}, }
+
+    class Media:
+        js = ('https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js',)
+

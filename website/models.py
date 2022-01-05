@@ -106,3 +106,14 @@ class Coach(models.Model):
         ordering = ["last_name", "first_name"]
         verbose_name = "Coach"
         verbose_name_plural = "Coaches"
+
+
+class Activity(models.Model):
+    season = models.CharField(max_length=6, choices=(("Winter", "Winter"), ("Summer", "Summer")), default="Winter", null=False, blank=False)
+    name = models.CharField(max_length=255, null=False, blank=False)
+    description = models.TextField(null=False, blank=False)
+
+    class Meta:
+        verbose_name = "Activity"
+        verbose_name_plural = "Activities"
+        ordering = ["name"]

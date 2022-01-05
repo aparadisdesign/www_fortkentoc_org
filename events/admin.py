@@ -3,6 +3,7 @@ import events.models as event_models
 from django import forms
 from django.db import models
 
+
 # Register your models here.
 class EventDayTabularInline(admin.TabularInline):
     model = event_models.EventDate
