@@ -1,0 +1,42 @@
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: _breakpoints.scss
+* Type:     Shared Stylesheet
+*
+*/
+
+ 
+$breakpoints: (
+    "phone-smallest": 320px,
+    "phone":          400px, // grid-cells 1 across
+    "phone-wide":     480px, // grid-cells 2 across
+    "tablet-small":   768px,
+    "tablet":         920px,
+    "desktop":        1024px,
+    "desktop-wide":   1374px, // increase size of grid-cells
+    "desktop-widest": 1662px // increase size of grid-cells
+);
+
+/* Breakpoints
+@include mq("size-here", "max or min here")
+Example:
+@include mq("phone", "max"){
+    styles here
+}
+*/
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            @if $width != phone-smallest {
+                $width: $width - 1px;
+            }
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
