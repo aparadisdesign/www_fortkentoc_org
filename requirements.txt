@@ -3,3 +3,5 @@ python-decouple
 pymysql
 pre-commit
 Pillow
+django_compressor
+django-libsass

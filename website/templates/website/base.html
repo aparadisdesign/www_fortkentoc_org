@@ -1,17 +1,23 @@
 {% load static %}
+{% load compress %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    
+
+{% compress css %}
+    <link type="text/x-scss" href="{% static 'css/styles.scss' %}" rel="stylesheet" media="screen">
+{% endcompress %}
+
 
 </head>
 <body>
     <header>
-        <div class="upper-menu-container">
-            <ul class="upper-menu">
+        <div class="top-bar">
+            <ul>
                 <li><a href="">Become A Member</a></li>
                 <li><a href="">Web Cam</a></li>
                 <li><a href="">Trail Maps</a></li>
@@ -21,8 +27,8 @@
             </ul>
         </div>
 
-        <div class="main-menu-container">
-            <ul class="main-menu">
+        <div class="main-menu">
+            <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Programs</a></li>

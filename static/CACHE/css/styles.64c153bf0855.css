@@ -1,0 +1,51 @@
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: styles.scss
+* Type:     Entry Point for Stylesheets
+*
+*/
+/*
+ * Flex UX Framework
+ *
+ * Filename: _configs.scss
+ * Type:     Stylesheet Configs
+ *
+ * Copyright (C) 2019 Geiger, All Rights Reserved
+ */
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: _breakpoints.scss
+* Type:     Shared Stylesheet
+*
+*/
+/* Breakpoints
+@include mq("size-here", "max or min here")
+Example:
+@include mq("phone", "max"){
+    styles here
+}
+*/
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: global.scss
+* Type:     Shared Stylesheet
+*
+*/
+/* line 10, static/css/global.scss */
+body {
+  background: blue !important; }
+
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: header.scss
+* Type:     Entry Point for Stylesheets
+*
+*/

@@ -1,0 +1,14 @@
+/*
+*
+* Fort Kent Outdoor Center Styles
+*
+* Filename: styles.scss
+* Type:     Entry Point for Stylesheets
+*
+*/
+
+@import '_configs.scss';
+@import '_breakpoints.scss';
+@import 'global.scss';
+@import 'partials/navigation/header.scss';
+@import 'partials/navigation/footer.scss';

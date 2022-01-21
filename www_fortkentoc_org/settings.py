@@ -19,7 +19,7 @@ ALLOWED_HOSTS = config(
 # Application definition
 
 INSTALLED_APPS = [
-    "django_non_dark_admin",
+    #    "django_non_dark_admin",
     "django.contrib.admin",
     "django.contrib.auth",
     "membership.apps.MembershipConfig",
@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "compressor",
 ]
 
 MIDDLEWARE = [
@@ -111,7 +112,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_ROOT = 'static'
+STATIC_URL = 'static/'
+MEDIA_ROOT = 'media'
+MEDIA_URL = 'media/'
+
+STATICFILES_FINDERS = [
+    "compressor.finders.CompressorFinder",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -120,5 +128,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "website.User"
 
+COMPRESS_PRECOMPILERS = (("text/x-scss", "django_libsass.SassCompiler"),)
 
-DISABLE_DARK_MODE = True
+# DISABLE_DARK_MODE = True
