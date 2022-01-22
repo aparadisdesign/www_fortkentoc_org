@@ -1,4 +1,19 @@
 {% extends 'website/base.html' %}
 {% block content %}
     <h1>Home Page</h1>
+
+    <h3>Trails Conditions</h3>
+    <ul style="font-weight: bolder;">
+        {% for trail_system in trail_systems %}
+            <li>
+                {{ trail_system.name }}
+                <ul style="margin-left: 50px;">
+                    {% for trail in trail_system.trails %}
+                       <li>{{ trail.name }} -- {{ trail.trail_status }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
 {% endblock %}
