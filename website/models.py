@@ -4,6 +4,11 @@ from django.db import models
 
 # Create your models here.
 from django.utils.translation import gettext as _
+from wagtail.core.models import Page
+
+
+class HomePage(Page):
+    pass
 
 
 class CustomUserManager(BaseUserManager):
