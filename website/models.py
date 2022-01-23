@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 from wagtail.core.models import Page
 
 
-class HomePage(Page):
+class BasicPage(Page):
     pass
 
 
