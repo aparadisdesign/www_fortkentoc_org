@@ -25,7 +25,7 @@ function Footer() {
               <img src={fkocLogo} alt="Fort Kent Outdoor Center" className="footer-logo-img" />
             </Link>
             <p className="footer-address">
-              123 Lodge Road<br />
+              33 Paradis Circle<br />
               Fort Kent, ME 04743<br />
               (207) 834-5678
             </p>
