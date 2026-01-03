@@ -946,13 +946,53 @@
   gap: var(--space-sm);
 }
 
-.nav-donate-btn {
+/* Donate Button Styles */
+.btn-donate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-sunset-orange);
+  color: var(--color-snow-white);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
+}
+
+.btn-donate:hover {
+  background-color: var(--color-autumn-rust);
+  color: var(--color-snow-white);
+}
+
+/* Desktop donate button - right side of nav */
+.nav-donate-desktop {
   display: none;
+  order: 2;
+  margin-left: auto;
 }
 
 @media (min-width: 1024px) {
-  .nav-donate-btn {
+  .nav-donate-desktop {
     display: inline-flex;
+  }
+}
+
+/* Mobile donate button - inside mobile menu */
+.nav-item-donate-mobile {
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-wool-gray);
+  margin-top: var(--space-sm);
+}
+
+.nav-item-donate-mobile .btn-donate {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .nav-item-donate-mobile {
+    display: none;
   }
 }
 

@@ -135,8 +135,30 @@ function Header() {
             <li className="nav-item">
               <Link to="/location" className="nav-link" onClick={closeAll}>Location</Link>
             </li>
+
+            {/* Donate button - mobile */}
+            <li className="nav-item nav-item-donate-mobile">
+              <a
+                href="https://buy.stripe.com/9AQ3g1dXm5cc1m83ch"
+                className="btn btn-donate"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Donate
+              </a>
+            </li>
           </ul>
         </div>
+
+        {/* Donate button - desktop */}
+        <a
+          href="https://buy.stripe.com/9AQ3g1dXm5cc1m83ch"
+          className="btn btn-donate nav-donate-desktop"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Donate
+        </a>
       </div>
     </nav>
   )

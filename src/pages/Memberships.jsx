@@ -174,8 +174,8 @@ function Memberships() {
                 accessing any facility or trails.
               </p>
               <a
-                href="https://app.waiverfile.com/w/fortkentoutdoorcenter/FKOCRelease"
-                target="_blank"
+                href="https://app.waiversign.com/e/68b05e9a16bfaf7b2a6b56e5/doc/68b0934d9b73a3001293355d?event=none"
+                target="_self"
                 rel="noopener noreferrer"
                 className="btn btn-outline-light"
               >
@@ -213,10 +213,10 @@ function Memberships() {
             </p>
           </div>
           <div className="stripe-container">
-            <stripe-pricing-table
-              pricing-table-id="prctbl_1PnC0VCNUZB7PvDymPfbxJvm"
-              publishable-key="pk_live_51K7Op9CNUZB7PvDyrt4Y4E7RoduQLDdUa8S0qfc2fZKdyHLcBbYXUAXAvS5UAzTWjGkIaCuxiTBLqFXYi01Xyb8N00CqrkdT6e"
-            />
+            <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1ScawpCNUZB7PvDyMKHEwRED"
+publishable-key="pk_live_51K7Op9CNUZB7PvDyrt4Y4E7RoduQLDdUa8S0qfc2fZKdyHLcBbYXUAXAvS5UAzTWjGkIaCuxiTBLqFXYi01Xyb8N00CqrkdT6e">
+</stripe-pricing-table>
           </div>
         </div>
       </section>
