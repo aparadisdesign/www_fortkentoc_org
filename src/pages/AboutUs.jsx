@@ -1,5 +1,27 @@
 import { Link } from 'react-router-dom'
 
+// Board member images
+import lauraAudibert from '../assets/images/board-members/laura-audibert.jpg'
+import paulKile from '../assets/images/board-members/paul-kile.jpg'
+import danielleReardon from '../assets/images/board-members/danielle-reardon.jpg'
+import patTheriault from '../assets/images/board-members/pat-theriault.jpg'
+import placeholderMember from '../assets/images/board-members/placeholder.png'
+import carlTheriault from '../assets/images/board-members/carl-theriault.jpg'
+import debHedeen from '../assets/images/board-members/deb-hedeen.jpg'
+import benParadis from '../assets/images/board-members/ben-paradis.jpg'
+import jimMarquis from '../assets/images/board-members/jim-marquis.jpg'
+import thomasAnderson from '../assets/images/board-members/thomas-anderson.jpg'
+
+// Construction images
+import construction1 from '../assets/images/about/construction-1.jpg'
+import construction2 from '../assets/images/about/construction-2.jpg'
+import construction4 from '../assets/images/about/construction-4.jpg'
+import construction5 from '../assets/images/about/construction-5.jpg'
+
+// Other images
+import massStartRace from '../assets/images/about/mass-start-race.jpg'
+import lodgeFall from '../assets/images/about/lodge-fall.jpg'
+
 const ArrowIcon = () => (
   <svg className="icon-arrow" fill="currentColor" viewBox="0 0 20 20">
     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -10,74 +32,74 @@ const boardMembers = [
   {
     name: 'Laura Audibert',
     role: 'President',
-    image: 'https://www.fortkentoc.org/media/images/board-members-35_ey0yZPZ.2e16d0ba.fill-296x369.jpg'
+    image: lauraAudibert
   },
   {
     name: 'Paul Kile',
     role: 'Vice President',
-    image: 'https://www.fortkentoc.org/media/images/Paul_Kile__Photo_xIlyYQc.2e16d0ba.fill-296x369.jpg'
+    image: paulKile
   },
   {
     name: 'Danielle Reardon',
     role: 'Secretary',
-    image: 'https://www.fortkentoc.org/media/images/board-members-46_uiMAHV4.2e16d0ba.fill-296x369.jpg'
+    image: danielleReardon
   },
   {
     name: 'Pat Theriault',
     role: 'Treasurer',
-    image: 'https://www.fortkentoc.org/media/images/board-members-50_7C89LQ0.2e16d0ba.fill-296x369.jpg'
+    image: patTheriault
   },
   {
     name: 'Mike Tanguay',
     role: null,
-    image: 'https://www.fortkentoc.org/static/media/public/images/noimageboardmember.2e16d0ba.fill-296x369.png'
+    image: placeholderMember
   },
   {
     name: 'Carl Theriault',
     role: null,
-    image: 'https://www.fortkentoc.org/media/images/board-members-47_RJRC5N7.2e16d0ba.fill-296x369.jpg'
+    image: carlTheriault
   },
   {
     name: 'Deb Hedeen',
     role: null,
-    image: 'https://www.fortkentoc.org/media/images/board-members-38_fQlgQFz.2e16d0ba.fill-296x369.jpg'
+    image: debHedeen
   },
   {
     name: 'Ben Paradis',
     role: null,
-    image: 'https://www.fortkentoc.org/media/images/board-members-53_YzvXAoE.2e16d0ba.fill-296x369.jpg'
+    image: benParadis
   },
   {
     name: 'Jim Marquis',
     role: null,
-    image: 'https://www.fortkentoc.org/media/images/board-members-43_uIZZYJr.2e16d0ba.fill-296x369.jpg'
+    image: jimMarquis
   },
   {
     name: 'Thomas J Anderson',
     role: null,
-    image: 'https://www.fortkentoc.org/media/images/TJ_photo_ZiZ5yXn.2e16d0ba.fill-296x369.jpg'
+    image: thomasAnderson
   }
 ]
 
 const constructionPhotos = [
   {
     title: 'Original Build Site',
-    image: 'https://www.fortkentoc.org/static/website/img/about_us_page/construction-1.jpg',
+    image: construction1,
     alt: 'Clearing the lot for the original building site'
   },
   {
     title: 'Building the FKOC walls',
-    image: 'https://www.fortkentoc.org/static/website/img/about_us_page/construction-2.jpg',
+    image: construction2,
     alt: 'Framing the lodge walls'
   },
   {
     title: 'Adding the FKOC roof',
-    image: 'https://www.fortkentoc.org/static/website/img/about_us_page/construction-4.jpg',
+    image: construction4,
     alt: 'Laying the trusses for the roof'
   },
   {
     title: 'Adding the FKOC siding',
-    image: 'https://www.fortkentoc.org/static/website/img/about_us_page/construction-5.jpg',
+    image: construction5,
     alt: 'Adding siding to the building'
   }
 ]
@@ -119,7 +141,7 @@ function AboutUs() {
           <div className="two-col-grid">
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/about_us_page/fort-kent-outdoor-center-mass-start-race.jpg"
+                src={massStartRace}
                 alt="Athletes during mass start race"
                 className="about-image"
               />
@@ -244,7 +266,7 @@ function AboutUs() {
             </p>
             <div className="support-image-wrapper">
               <img
-                src="https://www.fortkentoc.org/static/banner_images/fort-kent-outdoor-center-lodge-fall-image.jpg"
+                src={lodgeFall}
                 alt="FKOC lodge during fall season"
                 className="support-image"
               />

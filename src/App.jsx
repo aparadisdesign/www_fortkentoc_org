@@ -10,6 +10,7 @@ import Endowment from './pages/Endowment'
 import PoliciesAndSafety from './pages/PoliciesAndSafety'
 import CoachingPrograms from './pages/CoachingPrograms'
 import DayPasses from './pages/DayPasses'
+import Rentals from './pages/Rentals'
 import Memberships from './pages/Memberships'
 import EventCalendar from './pages/EventCalendar'
 import UpcomingEvents from './pages/UpcomingEvents'
@@ -27,6 +28,7 @@ function App() {
         <Route path="policies-and-safety" element={<PoliciesAndSafety />} />
         <Route path="coaching-programs" element={<CoachingPrograms />} />
         <Route path="day-passes" element={<DayPasses />} />
+        <Route path="rentals" element={<Rentals />} />
         <Route path="memberships" element={<Memberships />} />
         <Route path="event-calendar" element={<EventCalendar />} />
         <Route path="upcoming-events" element={<UpcomingEvents />} />

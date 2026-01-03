@@ -1,3 +1,33 @@
+import luciSkiing from '../assets/images/home/luci-skiing.png'
+
+// Map thumbnails
+import snowshoeMapThumb from '../assets/images/trails/maps-thumbnails/snowshoe-map.jpg'
+import mtbikeMapThumb from '../assets/images/trails/maps-thumbnails/mtbike-trails.jpg'
+import discGolfMapThumb from '../assets/images/trails/maps-thumbnails/disc-golf.jpg'
+import nordicMapThumb from '../assets/images/trails/maps-thumbnails/nordic-ski.jpg'
+import biathlon25kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-2-5km.jpg'
+import biathlon4kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-4km.jpg'
+import biathlon2kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-2km.jpg'
+import biathlon3kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-3km.jpg'
+import biathlon33kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-3-3km.jpg'
+import biathlon15kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-1-5km.jpg'
+import biathlonCompositeThumb from '../assets/images/trails/maps-thumbnails/biathlon-composite.jpg'
+import biathlon1kmThumb from '../assets/images/trails/maps-thumbnails/biathlon-1km.jpg'
+
+// Map full size
+import snowshoeMapFull from '../assets/images/trails/maps-original/snowshoe-map.jpeg'
+import mtbikeMapFull from '../assets/images/trails/maps-original/mtbike-trails.jpg'
+import discGolfMapFull from '../assets/images/trails/maps-original/disc-golf.jpg'
+import nordicMapFull from '../assets/images/trails/maps-original/nordic-ski.jpg'
+import biathlon25kmFull from '../assets/images/trails/maps-original/biathlon-2-5km.jpg'
+import biathlon4kmFull from '../assets/images/trails/maps-original/biathlon-4km.jpg'
+import biathlon2kmFull from '../assets/images/trails/maps-original/biathlon-2km.jpg'
+import biathlon3kmFull from '../assets/images/trails/maps-original/biathlon-3km.jpg'
+import biathlon33kmFull from '../assets/images/trails/maps-original/biathlon-3-3km.jpg'
+import biathlon15kmFull from '../assets/images/trails/maps-original/biathlon-1-5km.jpg'
+import biathlonCompositeFull from '../assets/images/trails/maps-original/biathlon-composite.jpg'
+import biathlon1kmFull from '../assets/images/trails/maps-original/biathlon-1km.jpg'
+
 const Icons = {
   Apple: () => (
     <svg className="app-icon" aria-hidden="true" viewBox="0 0 384 512">
@@ -14,20 +44,20 @@ const Icons = {
 const generalMaps = [
   {
     title: 'Snowshoe Trails',
-    thumbnail: 'https://www.fortkentoc.org/media/images/2025_Snowshoe_Map_Mar16_25_81828Fg.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/2025_Snowshoe_Map_Mar16_25_81828Fg.jpeg',
+    thumbnail: snowshoeMapThumb,
+    fullSize: snowshoeMapFull,
     alt: '2025 Snowshoe Map'
   },
   {
     title: 'Mountain Bike Trails',
-    thumbnail: 'https://www.fortkentoc.org/media/images/mtbiketrails_NhYKdCc.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/mtbiketrails_NhYKdCc.jpg',
+    thumbnail: mtbikeMapThumb,
+    fullSize: mtbikeMapFull,
     alt: 'Mountain Bike Trails Map'
   },
   {
     title: 'Disc Golf',
-    thumbnail: 'https://www.fortkentoc.org/media/images/2024-FKOC-Disc-Golf-Map_AkioXiA.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/2024-FKOC-Disc-Golf-Map_AkioXiA.jpg',
+    thumbnail: discGolfMapThumb,
+    fullSize: discGolfMapFull,
     alt: '2024 FKOC Disc Golf Map'
   }
 ]
@@ -35,8 +65,8 @@ const generalMaps = [
 const nordicMaps = [
   {
     title: 'FKOC Nordic Ski Map',
-    thumbnail: 'https://www.fortkentoc.org/media/images/2024-FKOC-Trail-Map4_XpRM6L4.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/2024-FKOC-Trail-Map4_XpRM6L4.jpg',
+    thumbnail: nordicMapThumb,
+    fullSize: nordicMapFull,
     alt: '2024 FKOC Trail Map'
   }
 ]
@@ -44,50 +74,50 @@ const nordicMaps = [
 const biathlonMaps = [
   {
     title: '2.5 Km Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map8_wmXvaNm.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map8_wmXvaNm.jpg',
+    thumbnail: biathlon25kmThumb,
+    fullSize: biathlon25kmFull,
     alt: '2.5 Km Biathlon Course'
   },
   {
     title: '4.0 Km Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map7_0YRPvYn.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map7_0YRPvYn.jpg',
+    thumbnail: biathlon4kmThumb,
+    fullSize: biathlon4kmFull,
     alt: '4.0 Km Biathlon Course'
   },
   {
     title: '2.0 Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map6_UBVc3Db.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map6_UBVc3Db.jpg',
+    thumbnail: biathlon2kmThumb,
+    fullSize: biathlon2kmFull,
     alt: '2.0 Biathlon Course'
   },
   {
     title: '3.0 Km Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map5_jqYQ0pc.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map5_jqYQ0pc.jpg',
+    thumbnail: biathlon3kmThumb,
+    fullSize: biathlon3kmFull,
     alt: '3.0 Km Biathlon Course'
   },
   {
     title: '3.3 Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map4_aMORakY.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map4_aMORakY.jpg',
+    thumbnail: biathlon33kmThumb,
+    fullSize: biathlon33kmFull,
     alt: '3.3 Biathlon Course'
   },
   {
     title: '1.5 Km Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map3_MFwPyt6.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map3_MFwPyt6.jpg',
+    thumbnail: biathlon15kmThumb,
+    fullSize: biathlon15kmFull,
     alt: '1.5 Km Biathlon Course'
   },
   {
     title: 'Composite Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map2_Jg1b5Nr.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map2_Jg1b5Nr.jpg',
+    thumbnail: biathlonCompositeThumb,
+    fullSize: biathlonCompositeFull,
     alt: 'Composite Biathlon Course'
   },
   {
     title: '1.0Km Biathlon Course',
-    thumbnail: 'https://www.fortkentoc.org/media/images/map1_Dyvmk3V.2e16d0ba.fill-800x600.jpg',
-    fullSize: 'https://www.fortkentoc.org/media/original_images/map1_Dyvmk3V.jpg',
+    thumbnail: biathlon1kmThumb,
+    fullSize: biathlon1kmFull,
     alt: '1.0Km Biathlon Course'
   }
 ]
@@ -189,7 +219,7 @@ function Trails() {
             </div>
             <div className="image-col app-image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/luciskiing.png"
+                src={luciSkiing}
                 alt="Dog skiing and looking at phone"
                 className="app-promo-image"
               />

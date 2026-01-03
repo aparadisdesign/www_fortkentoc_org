@@ -1,3 +1,26 @@
+// Coach images
+import coachBenParadis from '../assets/images/coaches/ben-paradis.png'
+import coachCarlTheriault from '../assets/images/coaches/carl-theriault.jpg'
+import coachMattMichaud from '../assets/images/coaches/matt-michaud.jpg'
+import coachSarahAshley from '../assets/images/coaches/sarah-ashley.jpg'
+import coachTorinLaliberte from '../assets/images/coaches/torin-laliberte.jpg'
+
+// Jalbert House images
+import jalbertHouse1 from '../assets/images/jalbert-house/jalbert-house-1.jpg'
+import jalbertHouse2 from '../assets/images/jalbert-house/jalbert-house-2.jpg'
+import jalbertHouse3 from '../assets/images/jalbert-house/jalbert-house-3.jpg'
+import jalbertHouse4 from '../assets/images/jalbert-house/jalbert-house-4.jpg'
+import jalbertHouse5 from '../assets/images/jalbert-house/jalbert-house-5.jpg'
+import jalbertHouse6 from '../assets/images/jalbert-house/jalbert-house-6.jpg'
+import jalbertHouse7 from '../assets/images/jalbert-house/jalbert-house-7.jpg'
+import jalbertHouse8 from '../assets/images/jalbert-house/jalbert-house-8.jpg'
+
+// Program images
+import jalbertSnowplow from '../assets/images/programs/jalbert-snowplow.jpg'
+import jalbertClass from '../assets/images/programs/jalbert-class.jpg'
+import jalbertBiathlon from '../assets/images/programs/jalbert-biathlon.jpg'
+import eastRegionBiathlon from '../assets/images/programs/east-region-biathlon.jpg'
+
 const CheckIcon = () => (
   <svg className="check-icon" viewBox="0 0 20 20" fill="currentColor">
     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -14,31 +37,31 @@ const coaches = [
   {
     name: 'Ben Paradis',
     role: 'Youth and Masters Nordic Coach',
-    image: 'https://www.fortkentoc.org/media/images/fort-kent-outdoor-center-coach-ben-paradis_4KS.width-400.png',
+    image: coachBenParadis,
     bio: 'Ben Paradis has been coaching Nordic skiing for over 30 years and has never had a bad day skiing. No matter what, skiing puts a smile on his face. Ben is especially adept at analyzing and explaining technique to all age levels, and you will surely come back from a refreshing ski in the brisk air with a smile on your face!'
   },
   {
     name: 'Carl Theriault',
     role: 'Program Director',
-    image: 'https://www.fortkentoc.org/media/images/fort-kent-outdoor-center-coach-carl-theriault_.width-400.jpg',
+    image: coachCarlTheriault,
     bio: 'Carl has been involved with coaching skiing and biathlon for the past 23 years, and is a life long lover of anything you can do on skis! Coordinating training programs, range activities, FKOC development, and the local High School Nordic team fill most his days. When he is not working on ski programs and activities, you can find Carl out traveling, or riding horses, bicycles, and motorcycles.'
   },
   {
     name: 'Matt Michaud',
     role: 'Youth and Masters Biathlon Coach',
-    image: 'https://www.fortkentoc.org/media/images/fort-kent-outdoor-center-coach-matt-michaud_ad.width-400.jpg',
+    image: coachMattMichaud,
     bio: 'An active skier all his life, Matt spent several years as part of the National Guard Biathlon team, and now focuses on volunteering to help us coach our youth and masters biathletes. Two of his boys are currently active in our programs and you can find Matt occasionally jumping in to a biathlon event demonstrating skills he learned during his years with the guard.'
   },
   {
     name: 'Sarah Ashley',
     role: 'Nordic Coach',
-    image: 'https://www.fortkentoc.org/media/images/fort-kent-outdoor-center-coach-sarah-ashley_Lo.width-400.jpg',
+    image: coachSarahAshley,
     bio: 'Sarah Ashley is our wonderful middle school and ladies night coach who is an alumni of our high school ski team and she always finds a way to instill and have fun out in the ski trails with a smile on her face!'
   },
   {
     name: 'Torin La Liberté',
     role: 'Venue Manager/Nordic Coach',
-    image: 'https://www.fortkentoc.org/media/images/Torin2_AhF6LnD.width-400.jpg',
+    image: coachTorinLaliberte,
     bio: "Torin La Liberte comes to us after 6 years as the head coach of the Clarkson University Cross Country and Nordic Ski teams. While at Clarkson, Torin's teams tallied two USCSA National Championship titles, an NCAA Skiing Championship appearance, and were a perennial powerhouse in the USCSA. When there's not snow on the ground, you can usually find Torin riding his bike or obsessing over ski wax!"
   }
 ]
@@ -52,14 +75,14 @@ const pgPricing = [
 ]
 
 const residencePhotos = [
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-1.jpg', alt: 'Jalbert House front yard' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-2.jpg', alt: 'Jalbert House bedroom' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-3.jpg', alt: 'Jalbert House living space' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-4.jpg', alt: 'Jalbert House dining area' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-5.jpg', alt: 'Jalbert House kitchen' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-6.jpg', alt: 'Jalbert House' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-7.jpg', alt: 'Jalbert House sign' },
-  { src: 'https://www.fortkentoc.org/static/website/img/jalbert-house/jalbert-house-8.jpg', alt: 'Jalbert House parking' }
+  { src: jalbertHouse1, alt: 'Jalbert House front yard' },
+  { src: jalbertHouse2, alt: 'Jalbert House bedroom' },
+  { src: jalbertHouse3, alt: 'Jalbert House living space' },
+  { src: jalbertHouse4, alt: 'Jalbert House dining area' },
+  { src: jalbertHouse5, alt: 'Jalbert House kitchen' },
+  { src: jalbertHouse6, alt: 'Jalbert House' },
+  { src: jalbertHouse7, alt: 'Jalbert House sign' },
+  { src: jalbertHouse8, alt: 'Jalbert House parking' }
 ]
 
 function CoachingPrograms() {
@@ -273,12 +296,12 @@ function CoachingPrograms() {
             <div className="image-col">
               <div className="staggered-images">
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/programs/Jalbert-snowplow.jpg"
+                  src={jalbertSnowplow}
                   alt="Kid skiing"
                   className="staggered-img-1"
                 />
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/programs/Jalbert-class.jpg"
+                  src={jalbertClass}
                   alt="Kids taking a ski lesson"
                   className="staggered-img-2"
                 />
@@ -312,12 +335,12 @@ function CoachingPrograms() {
             <div className="image-col">
               <div className="staggered-images">
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/programs/jalbert-biathlon.jpg"
+                  src={jalbertBiathlon}
                   alt="Biathlon racer"
                   className="staggered-img-1"
                 />
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/programs/east-region-biathlon-sm-106.jpg"
+                  src={eastRegionBiathlon}
                   alt="Biathlon range"
                   className="staggered-img-2"
                 />

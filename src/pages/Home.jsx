@@ -1,7 +1,15 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
+
+import endowmentImage from '../assets/images/home/endowment.png'
 
 // Icon components
 const Icons = {
+  Close: () => (
+    <svg className="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M18 6L6 18M6 6l12 12" />
+    </svg>
+  ),
   ArrowRight: () => (
     <svg className="icon-arrow" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
       <path fillRule="evenodd" clipRule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414z" />
@@ -55,6 +63,8 @@ const Icons = {
 }
 
 function Home() {
+  const [webcamModalOpen, setWebcamModalOpen] = useState(false)
+
   return (
     <div className="home-page">
       {/* Hero Section */}
@@ -117,7 +127,7 @@ function Home() {
             <div className="image-col">
               <div className="image-card">
                 <img
-                  src="https://www.fortkentoc.org/endowmentimage.png"
+                  src={endowmentImage}
                   alt="Scenic winter trail representing FKOC Endowment"
                   loading="lazy"
                 />
@@ -198,11 +208,10 @@ function Home() {
               </div>
             </div>
             <div className="image-col">
-              <a
-                href="https://www.fortkentoc.org/webcam/image.jpg"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                type="button"
                 className="webcam-card"
+                onClick={() => setWebcamModalOpen(true)}
               >
                 <div className="webcam-image-wrapper">
                   <img
@@ -216,7 +225,7 @@ function Home() {
                   <span>View full size image</span>
                   <Icons.Expand />
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -264,6 +273,28 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* Webcam Modal */}
+      {webcamModalOpen && (
+        <div className="modal-overlay" onClick={() => setWebcamModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button
+              type="button"
+              className="modal-close-btn"
+              onClick={() => setWebcamModalOpen(false)}
+              aria-label="Close modal"
+            >
+              <Icons.Close />
+            </button>
+            <img
+              src="https://www.fortkentoc.org/webcam/image.jpg"
+              alt="FKOC webcam view of the stadium - full size"
+              className="modal-image"
+            />
+            <p className="modal-caption">Stadium webcam - Updated every minute</p>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -1,3 +1,10 @@
+import lodgeInterior from '../assets/images/facilities/lodge-interior.jpg'
+import lodgeBunks from '../assets/images/facilities/lodge-bunks.jpg'
+import tenthMtnLodge from '../assets/images/facilities/10th-mtn-lodge.jpg'
+import waxBuilding from '../assets/images/facilities/wax-building.jpg'
+import stadiumTiming from '../assets/images/facilities/stadium-and-timing-building.jpg'
+import tenthAerial from '../assets/images/facilities/10th-aerial.jpg'
+
 function Facilities() {
   return (
     <div className="facilities-page">
@@ -50,12 +57,12 @@ function Facilities() {
             <div className="image-col">
               <div className="staggered-images">
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/lodge-interior.jpg"
+                  src={lodgeInterior}
                   alt="FKOC lodge interior"
                   className="staggered-img-1"
                 />
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/lodge-bunks.jpg"
+                  src={lodgeBunks}
                   alt="Lodge bunks"
                   className="staggered-img-2"
                 />
@@ -71,7 +78,7 @@ function Facilities() {
           <div className="two-col-grid">
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/10th-mtn-lodge.jpg"
+                src={tenthMtnLodge}
                 alt="FKOC lodge"
                 className="facility-image"
               />
@@ -110,7 +117,7 @@ function Facilities() {
             </div>
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/wax-building.jpg"
+                src={waxBuilding}
                 alt="Wax building"
                 className="facility-image"
               />
@@ -125,7 +132,7 @@ function Facilities() {
           <div className="two-col-grid">
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/stadium-and-timing-building.jpg"
+                src={stadiumTiming}
                 alt="Stadium and timing building"
                 className="facility-image"
               />
@@ -157,7 +164,7 @@ function Facilities() {
             </div>
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/10th-aerial.jpg"
+                src={tenthAerial}
                 alt="Aerial view of facility"
                 className="facility-image"
               />

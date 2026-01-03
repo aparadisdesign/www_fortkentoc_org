@@ -23,33 +23,23 @@ function Header() {
           <span className="sr-only">Fort Kent Outdoor Center</span>
         </Link>
 
-        <div className="nav-cta-mobile">
-          <a
-            href="https://buy.stripe.com/9AQ3g1dXm5cc1m83ch"
-            className="btn btn-primary btn-sm nav-donate-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Make a Donation
-          </a>
-          <button
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-menu"
-          >
-            <span className="sr-only">Open main menu</span>
-            {!mobileMenuOpen ? (
-              <svg className="menu-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-              </svg>
-            ) : (
-              <svg className="menu-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
-              </svg>
-            )}
-          </button>
-        </div>
+        <button
+          className="mobile-menu-btn"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-menu"
+        >
+          <span className="sr-only">Open main menu</span>
+          {!mobileMenuOpen ? (
+            <svg className="menu-icon" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+            </svg>
+          ) : (
+            <svg className="menu-icon" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+          )}
+        </button>
 
         <div className={`nav-menu ${mobileMenuOpen ? 'nav-menu-open' : ''}`} id="mobile-menu">
           <ul className="nav-list">
@@ -115,6 +105,7 @@ function Header() {
                 <ul className="nav-dropdown-list">
                   <li><Link to="/trails" onClick={closeAll}>Trail Maps</Link></li>
                   <li><Link to="/day-passes" onClick={closeAll}>Day Passes</Link></li>
+                  <li><Link to="/rentals" onClick={closeAll}>Rentals</Link></li>
                   <li><Link to="/memberships" onClick={closeAll}>Memberships</Link></li>
                 </ul>
               </div>

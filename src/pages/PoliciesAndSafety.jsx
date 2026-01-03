@@ -1,5 +1,8 @@
 import { Link } from 'react-router-dom'
 
+import dog1 from '../assets/images/policies/dog-1.png'
+import dog2 from '../assets/images/policies/dog-2.png'
+
 const skiingTips = [
   'Make sure you are skiing on a trail where dogs are allowed.',
   'Keep leashes short enough so that they can\'t become a tripping hazard to someone else who may be skiing nearby. Ideally, your dog should be near your side and slightly ahead of you, but not in front of your skis.',
@@ -62,12 +65,12 @@ function PoliciesAndSafety() {
             <div className="image-col">
               <div className="staggered-images">
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/dog-1.png"
+                  src={dog1}
                   alt="Skiing with a dog"
                   className="staggered-img-1"
                 />
                 <img
-                  src="https://www.fortkentoc.org/static/website/img/dog-2.png"
+                  src={dog2}
                   alt="Dog and skier"
                   className="staggered-img-2"
                 />

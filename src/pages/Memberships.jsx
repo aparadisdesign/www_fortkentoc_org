@@ -1,6 +1,8 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+import massStartRace from '../assets/images/about/mass-start-race.jpg'
+
 const CheckIcon = () => (
   <svg className="benefit-icon" viewBox="0 0 20 20" fill="currentColor">
     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
@@ -150,7 +152,7 @@ function Memberships() {
             </div>
             <div className="image-col">
               <img
-                src="https://www.fortkentoc.org/static/website/img/about_us_page/fort-kent-outdoor-center-mass-start-race.jpg"
+                src={massStartRace}
                 alt="Athletes at Fort Kent Outdoor Center"
                 className="benefits-image"
               />

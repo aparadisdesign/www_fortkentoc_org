@@ -67,7 +67,7 @@ function DayPasses() {
               Outdoor Center has to offer. Try some of our Cross Country Skis, or toss on a
               pair of Snowshoes and enjoy our winter walking trails.
             </p>
-            <Link to="/facilities" className="btn btn-primary">
+            <Link to="/rentals" className="btn btn-primary">
               Rental Info
             </Link>
           </div>
