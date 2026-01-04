@@ -132,7 +132,7 @@ export function groupEventsForUpcoming(events) {
     title: event.title,
     description: event.description,
     category: event.category,
-    flyerPdf: event.flyer_pdf,
+    flyerUrl: event.flyer_url,
     dates: event.sessions.map(session => ({
       date: formatDate(session.date),
       time: formatTimeRange(session.start_time, session.end_time),

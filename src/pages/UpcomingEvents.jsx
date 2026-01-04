@@ -101,15 +101,16 @@ function UpcomingEvents() {
                       </div>
                     ))}
                   </div>
-                  {event.flyerPdf && (
+                  {event.flyerUrl && (
                     <a
-                      href={event.flyerPdf}
+                      href={event.flyerUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="event-pdf-link"
+                      className="event-flyer-link"
+                      title="View Event Flyer"
                     >
                       <PdfIcon />
-                      View Event PDF
+                      <span>View Event Flyer</span>
                     </a>
                   )}
                 </article>
