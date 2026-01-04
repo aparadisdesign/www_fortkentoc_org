@@ -10,21 +10,16 @@
 
 :root {
   /* Primary Palette - Maroon (from "Fort Kent" in logo) */
-  --color-primary: #8B2332;
-  --color-primary-light: #A52D3F;
-  --color-primary-dark: #6B1A26;
-  --color-primary-alpha-10: rgba(139, 35, 50, 0.1);
-  --color-primary-alpha-95: rgba(139, 35, 50, 0.95);
+  --color-primary: #1C64F2;
+  --color-primary-light: #FAFAF8;
+  --color-primary-dark: #1F2937;
+  --color-primary-alpha-10: rgba(35, 103, 139, 0.1);
+  --color-primary-alpha-95: rgba(56, 100, 141, 0.95);
 
   /* Secondary - Navy Blue (from "Outdoor Center" in logo) */
   --color-navy: #1E3A5F;
   --color-navy-light: #2A4D7A;
   --color-navy-dark: #152942;
-
-  /* Accent - Bright Blue (from ski swoosh in logo) */
-  --color-accent-blue: #2B7DB9;
-  --color-accent-blue-light: #3A8FCC;
-  --color-accent-blue-dark: #1F6090;
 
   /* Highlight - Orange/Gold (from star in logo) */
   --color-gold: #F7941D;
@@ -32,11 +27,6 @@
   --color-gold-dark: #E07D0A;
 
   /* Legacy aliases for backward compatibility */
-  --color-pine-green: var(--color-primary);
-  --color-pine-green-light: var(--color-primary-light);
-  --color-pine-green-dark: var(--color-primary-dark);
-  --color-pine-green-alpha-10: var(--color-primary-alpha-10);
-  --color-pine-green-alpha-95: var(--color-primary-alpha-95);
   --color-muted-gold: var(--color-gold);
   --color-muted-gold-light: var(--color-gold-light);
   --color-muted-gold-dark: var(--color-gold-dark);
@@ -217,18 +207,18 @@ p {
    ========================================================================== */
 
 a {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   text-decoration: underline;
   text-underline-offset: 2px;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-pine-green-light);
+  color: var(--color-primary-light);
 }
 
 a:focus-visible {
-  outline: 2px solid var(--color-pine-green);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
   border-radius: var(--radius-sm);
 }
@@ -259,7 +249,7 @@ a:focus-visible {
 }
 
 .section-dark {
-  background-color: var(--color-pine-green);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
 }
 
@@ -304,12 +294,12 @@ a:focus-visible {
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 
-.text-pine { color: var(--color-pine-green); }
+.text-pine { color: var(--color-primary); }
 .text-gold { color: var(--color-muted-gold); }
 .text-muted { color: var(--color-text-secondary); }
 .text-inverse { color: var(--color-text-inverse); }
 
-.bg-pine { background-color: var(--color-pine-green); }
+.bg-pine { background-color: var(--color-primary); }
 .bg-cream { background-color: var(--color-birch-cream); }
 .bg-white { background-color: var(--color-snow-white); }
 

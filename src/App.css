@@ -25,19 +25,19 @@
 }
 
 .btn:focus-visible {
-  outline: 2px solid var(--color-pine-green);
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
 .btn-primary {
   color: var(--color-text-inverse);
-  background-color: var(--color-pine-green);
-  border-color: var(--color-pine-green);
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-pine-green-light);
-  border-color: var(--color-pine-green-light);
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -48,18 +48,18 @@
 }
 
 .btn-secondary {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   background-color: transparent;
-  border-color: var(--color-pine-green);
+  border-color: var(--color-primary);
 }
 
 .btn-secondary:hover {
   color: var(--color-text-inverse);
-  background-color: var(--color-pine-green);
+  background-color: var(--color-primary);
 }
 
 .btn-gold {
-  color: var(--color-pine-green-dark);
+  color: var(--color-primary-dark);
   background-color: var(--color-muted-gold);
   border-color: var(--color-muted-gold);
 }
@@ -72,26 +72,26 @@
 }
 
 .btn-outline-light {
-  color: var(--color-text-inverse);
   background-color: transparent;
+  color: var(--color-text-inverse);
   border-color: var(--color-text-inverse);
 }
 
 .btn-outline-light:hover {
-  color: var(--color-pine-green);
-  background-color: var(--color-text-inverse);
+  color: var(--color-snow-white);
+  background-color: var(--color-snow-white);
 }
 
 .btn-link {
   padding: 0;
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   background: none;
   border: none;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: var(--color-pine-green-light);
+  color: var(--color-primary-light);
 }
 
 .btn-link svg {
@@ -140,7 +140,7 @@
   align-items: center;
   gap: var(--space-sm);
   text-decoration: none;
-  color: var(--color-pine-green);
+  color: var(--color-primary);
 }
 
 .logo-icon {
@@ -183,7 +183,7 @@
 }
 
 .nav-link:hover {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
 }
 
 .header-cta {
@@ -205,7 +205,7 @@
   padding: 0;
   background: none;
   border: none;
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   cursor: pointer;
 }
 
@@ -224,7 +224,7 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  background-color: var(--color-pine-green);
+  background-color: var(--color-primary);
   background-image: linear-gradient(
     to bottom,
     rgba(45, 74, 62, 0.3) 0%,
@@ -282,7 +282,7 @@
   justify-content: center;
   gap: var(--space-lg);
   padding: var(--space-md) var(--space-lg);
-  background-color: var(--color-pine-green-alpha-95);
+  background-color: var(--color-primary-alpha-95);
   backdrop-filter: blur(8px);
   border-radius: var(--radius-lg);
   max-width: 700px;
@@ -329,7 +329,7 @@
 }
 
 .card-bordered:hover {
-  border-color: var(--color-pine-green);
+  border-color: var(--color-primary);
 }
 
 /* Trail Activity Card */
@@ -342,7 +342,7 @@
   width: 64px;
   height: 64px;
   margin: 0 auto var(--space-md);
-  color: var(--color-pine-green);
+  color: var(--color-primary);
 }
 
 .card-trail-title {
@@ -401,7 +401,7 @@
   font-family: var(--font-heading);
   font-size: var(--text-2xl);
   font-weight: 700;
-  color: var(--color-pine-green);
+  color: var(--color-primary);
 }
 
 .card-event-content {
@@ -428,14 +428,14 @@
   width: 48px;
   height: 48px;
   margin: 0 auto var(--space-md);
-  color: var(--color-pine-green);
+  color: var(--color-primary);
 }
 
 .card-support-title {
   font-family: var(--font-heading);
   font-size: var(--text-xl);
   font-weight: 600;
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   margin-bottom: var(--space-sm);
 }
 
@@ -721,7 +721,7 @@
    ========================================================================== */
 
 .footer {
-  background-color: var(--color-pine-green);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
   padding: var(--space-3xl) 0 var(--space-xl);
 }
@@ -872,7 +872,7 @@
 .form-select:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--color-pine-green);
+  border-color: var(--color-primary);
 }
 
 .form-input::placeholder,
@@ -1076,7 +1076,7 @@
 }
 
 .nav-link:hover {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   background-color: var(--color-birch-cream);
 }
 
@@ -1111,7 +1111,7 @@
 }
 
 .nav-dropdown-btn:hover {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   background-color: var(--color-birch-cream);
 }
 
@@ -1184,7 +1184,7 @@
 }
 
 .nav-dropdown-list li a:hover {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   background-color: var(--color-birch-cream);
 }
 
@@ -1201,7 +1201,7 @@
 }
 
 .page-hero {
-  background-color: var(--color-pine-green);
+  background-color: var(--color-primary);
   color: var(--color-text-inverse);
   padding: var(--space-3xl) 0;
   text-align: center;
@@ -1389,7 +1389,7 @@
   justify-content: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-lg);
-  background-color: var(--color-accent-blue);
+  background-color: var(--color-primary-light);
   color: var(--color-text-inverse);
   border: none;
   border-radius: var(--radius-lg);
@@ -1400,7 +1400,7 @@
 }
 
 .btn-accent:hover {
-  background-color: var(--color-accent-blue-light);
+  background-color: var(--color-primary-light-light);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -2325,7 +2325,7 @@
 }
 
 .progress-fill-blue {
-  background: linear-gradient(90deg, var(--color-accent-blue), #1e6a9e);
+  background: linear-gradient(90deg, var(--color-primary-light), #1e6a9e);
 }
 
 .progress-percent {
@@ -2362,7 +2362,7 @@
   display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: var(--color-accent-blue);
+  background-color: var(--color-primary-light);
   border-radius: 50%;
   margin-right: var(--space-sm);
 }
@@ -2430,7 +2430,7 @@
 }
 
 .tier-blue {
-  background: linear-gradient(135deg, var(--color-accent-blue) 0%, var(--color-navy) 100%);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-navy) 100%);
   color: var(--color-snow-white);
 }
 
@@ -2680,7 +2680,7 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background-color: var(--color-accent-blue);
+  background-color: var(--color-primary-light);
   color: var(--color-snow-white);
   border-radius: 50%;
   font-size: var(--text-sm);
@@ -2827,7 +2827,7 @@
 }
 
 .pg-block a {
-  color: var(--color-accent-blue);
+  color: var(--color-primary-light);
   text-decoration: underline;
 }
 
@@ -3418,7 +3418,7 @@
 }
 
 .fc .fc-daygrid-day.fc-day-today .fc-daygrid-day-number {
-  background-color: var(--color-accent-blue);
+  background-color: var(--color-primary-light);
   color: var(--color-snow-white);
   border-radius: 50%;
   width: 28px;
@@ -3561,7 +3561,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-accent-blue);
+  color: var(--color-primary-light);
   background-color: rgba(43, 125, 185, 0.1);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
@@ -3629,7 +3629,7 @@
   align-items: center;
   gap: var(--space-xs);
   font-size: var(--text-sm);
-  color: var(--color-accent-blue);
+  color: var(--color-primary-light);
   text-decoration: none;
   transition: all var(--transition-base);
   padding: var(--space-xs) var(--space-sm);
@@ -3940,13 +3940,13 @@
 }
 
 .rentals-pdf-link a {
-  color: var(--color-pine-green);
+  color: var(--color-primary);
   font-weight: 600;
   text-decoration: underline;
 }
 
 .rentals-pdf-link a:hover {
-  color: var(--color-pine-green-light);
+  color: var(--color-primary-light);
 }
 
 /* =====================================================
@@ -4105,7 +4105,7 @@
 }
 
 .event-modal-icon {
-  color: var(--color-accent-blue);
+  color: var(--color-primary-light);
   flex-shrink: 0;
 }
 

@@ -153,7 +153,7 @@ function Header() {
         {/* Donate button - desktop */}
         <a
           href="https://buy.stripe.com/9AQ3g1dXm5cc1m83ch"
-          className="btn btn-donate nav-donate-desktop"
+          className="btn btn-accent nav-donate-desktop"
           target="_blank"
           rel="noopener noreferrer"
         >
